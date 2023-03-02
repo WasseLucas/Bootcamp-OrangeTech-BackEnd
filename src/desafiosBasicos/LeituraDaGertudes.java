@@ -25,9 +25,9 @@ public class LeituraDaGertudes{
     Scanner leitor = new Scanner(System.in);
         int paginas = leitor.nextInt();
         int paginasLidas = 3;
-        
-        // TODO: Crie a condição necessária para que Getrudes saiba em quanto tempo terminará seus livros
+      
         int finalLivro = paginas / paginasLidas;
         System.out.println(finalLivro + " dias");
+    leitor.close();
   }
 }
