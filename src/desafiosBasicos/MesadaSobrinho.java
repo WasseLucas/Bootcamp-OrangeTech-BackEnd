@@ -16,8 +16,7 @@ public class MesadaSobrinho{
     int mesada = 50;
     
     int valorAcumulado =  entrada * mesada ;
-    // TODO: Crie a condição necessária para que o sobrinho saiba quanto dinheiro irá juntar nos meses da entrada
     System.out.println("Voce tera " + valorAcumulado);
-
+    leitor.close();
   }
 }
