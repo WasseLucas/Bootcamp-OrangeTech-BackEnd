@@ -23,13 +23,13 @@ import java.util.Scanner;
 public class DownloadDePacotes {
   public static void main(String[] args) {
     Scanner leitor = new Scanner(System.in);
-        int tamanho = leitor.nextInt();
+    int tamanho = leitor.nextInt();
         
-        // TODO: Crie a condição necessária para que, de acordo com o tamanho, seja printado no console barras representando o download
-        String texto = "";
-        for (int i=0; i < tamanho; ++i)  {
-             texto = texto+"/"; 
-         }
-       System.out.println(texto);
+    String texto = "";
+    for (int i=0; i < tamanho; ++i)  {
+          texto = texto+"/"; 
+    }
+    System.out.println(texto);
+    leitor.close();
   } 
 }
