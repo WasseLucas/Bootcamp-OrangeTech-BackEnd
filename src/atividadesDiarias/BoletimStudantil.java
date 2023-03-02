@@ -1,7 +1,5 @@
 package atividadesDiarias;
 
-import javax.sound.midi.Soundbank;
-
 public class BoletimStudantil {
   public static void main(String[] args) {
     // Fazer um programa para saber se o aluno está aprovado ou reporovado.
