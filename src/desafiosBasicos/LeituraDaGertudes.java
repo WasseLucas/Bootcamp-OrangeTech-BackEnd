@@ -27,7 +27,7 @@ public class LeituraDaGertudes{
         int paginasLidas = 3;
         
         // TODO: Crie a condição necessária para que Getrudes saiba em quanto tempo terminará seus livros
-        int finalFinalLivro = paginas / paginasLidas;
-        System.out.println(finalFinalLivro + " dias");
+        int finalLivro = paginas / paginasLidas;
+        System.out.println(finalLivro + " dias");
   }
 }
