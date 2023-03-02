@@ -26,8 +26,7 @@ public class LojinhaDeDoces {
     Scanner sc = new Scanner(System.in);
 
     int dinheiro = sc.nextInt();
-        // TODO: Crie a condição necessária para que cada cliente saiba quantos doces vai obter de acordo com a entrada
         System.out.println("O cliente obteve "+ dinheiro * 2 + " doces");
-
+    sc.close();
   }
 }
