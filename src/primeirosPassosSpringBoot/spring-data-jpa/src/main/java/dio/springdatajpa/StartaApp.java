@@ -1,4 +1,4 @@
-package dio.springdatajpa.app;
+package dio.springdatajpa;
 
 import dio.springdatajpa.model.User;
 import dio.springdatajpa.repository.UserRepository;
@@ -9,22 +9,22 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 
-@Component
+@Component("StartaApp")
 public class StartaApp implements CommandLineRunner {
-
     @Autowired
     private UserRepository repository;
-
     @Override
     public void run(String... args) throws Exception {
-        User user = new User();
-        user.setName("Wasse Lucas");
-        user.setUserName("wassejp");
-        user.setPassword("wasselucas01");
 
+    }
+    private void insertUser() {
+        User user = new User();
+        user.setName("GABRIEL NUNES");
+        user.setUserName("gabriel");
+        user.setPassword("santos");
         repository.save(user);
 
-        for (User u : repository.findAll()){
+        for (User u : repository.findAll()) {
             System.out.println(u);
         }
     }

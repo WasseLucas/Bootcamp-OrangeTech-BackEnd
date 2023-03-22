@@ -7,7 +7,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-
 @Entity
 @Table(name = "tab_user")
 public class User {
@@ -15,11 +14,11 @@ public class User {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "user_id")
   private Integer id;
-  @Column(name ="name",length = 50, nullable = false)
+  @Column(length = 50, nullable = false)
   private String name;
-  @Column(name = "user_name",length = 20, nullable = false)
+  @Column(length = 20, nullable = false)
   private String userName;
-  @Column(name ="user_password",length = 100, nullable = false)
+  @Column(length = 100, nullable = false)
   private String password;
 
   public Integer getId() {
@@ -56,7 +55,7 @@ public class User {
 
   @Override
   public String toString() {
-    return "User [id=" + id + ", name=" + name + ", userName=" + userName + ", password=" + password + "]";
+    return "User {id=" + id + ", name=" + name + ", userName=" + userName + ", password=" + password + "}";
   }
 
 }
